@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Comic Neue', cursive;
+    color: black;
+}
+
+@media only screen and (min-width: 768px){
+    section div:nth-child(2){
+        display: flex;
+    }
+    section:nth-of-type(2) div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    section:nth-of-type(1) div:nth-child(2) article:first-of-type{
+        border-right: none;
+    }
+    section:nth-of-type(2) div:nth-child(2) article:first-of-type{
+        border-right: none;
+    }
+    section:nth-of-type(3) div:nth-child(2) article:first-of-type{
+        border-right: none;
+    }
+    section:nth-of-type(4) div:nth-child(2) article:first-of-type{
+        border-right: none;
+    }
+    section div:nth-child(2) article:nth-of-type(3){
+        border-left: none;
+    }
+    section:nth-of-type(1) div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    section:nth-of-type(2) div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    section:nth-of-type(3) div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section:nth-of-type(4) div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+header{
+    position: relative;
+    height: 100vh;
+    background: url(img/t1.png);
+    background-position: center;
+    border: 1em black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/t2.png);
+    background-position: center;
+    background-size: cover;
+    animation: hdiv 0.5s alternate infinite ease-in;
+}
+
+@keyframes hdiv{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes header{
+    from {opacity: 0; transform: scale(0.6);}
+    to {opacity: 1; transform: scale(1.1);}
+}
+
+header img{
+    height: 750px;
+    width: 1300px;
+    animation: himg 0.5s alternate infinite ease-in;
+}
+
+@keyframes himg{
+    from {opacity: 0; transform: scale(0.6);}
+    to {opacity: 1; transform: scale(1.1);}
+}
+
+#wd{
+    position: relative;
+    height: 30vh;
+    border-left: 1em black solid;
+    border-right: 1em black solid;
+    border-bottom: 0.5em black solid;
+}
+
+#wd1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/cbg1.png);
+    background-position: center;
+}
+
+#wd2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/cbg2.png);
+    background-position: center;
+    animation: wd2 0.5s alternate infinite ease-in;
+}
+
+@keyframes wd2{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#wd3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/wd.png);
+    background-position: center;
+    animation: wd3 1.5s alternate infinite ease-in-out;
+}
+
+@keyframes wd3{
+    0%   {transform: scale(1.2);}
+    100% {transform: scale(1.5);}
+}
+
+#gd{
+    position: relative;
+    height: 30vh;
+    border-left: 1em black solid;
+    border-right: 1em black solid;
+    border-bottom: 0.5em black solid;
+    border-top: 0.5em black solid;
+}
+
+#gd1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/cbg1.png);
+    background-position: center;
+}
+
+#gd2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/cbg2.png);
+    background-position: center;
+    animation: gd2 0.5s alternate infinite ease-in;
+}
+
+@keyframes gd2{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#gd3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/gd.png);
+    background-position: center;
+    animation: wd3 1.5s alternate infinite ease-in-out;
+}
+
+@keyframes gd3{
+    0%   {transform: scale(1.2);}
+    100% {transform: scale(1.5);}
+}
+
+#a3d{
+    position: relative;
+    height: 30vh;
+    border-left: 1em black solid;
+    border-right: 1em black solid;
+    border-bottom: 0.5em black solid;
+    border-top: 0.5em black solid;
+}
+
+#a3d1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/cbg1.png);
+    background-position: center;
+}
+
+#a3d2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/cbg2.png);
+    background-position: center;
+    animation: a3d2 0.5s alternate infinite ease-in;
+}
+
+@keyframes a3d2{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#a3d3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/3d.png);
+    background-position: center;
+    animation: a3d3 1.5s alternate infinite ease-in-out;
+}
+
+@keyframes a3d3{
+    0%   {transform: scale(1.2);}
+    100% {transform: scale(1.5);}
+}
+
+#apps{
+    position: relative;
+    height: 30vh;
+    border-left: 1em black solid;
+    border-right: 1em black solid;
+    border-bottom: 0.5em black solid;
+    border-top: 0.5em black solid;
+}
+
+#apps1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/cbg1.png);
+    background-position: center;
+}
+
+#apps2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/cbg2.png);
+    background-position: center;
+    animation: apps2 0.5s alternate infinite ease-in;
+}
+
+@keyframes apps2{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#apps3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/apps.png);
+    background-position: center;
+    animation: apps3 1.5s alternate infinite ease-in-out;
+}
+
+@keyframes apps3{
+    0%   {transform: scale(1.2);}
+    100% {transform: scale(1.5);}
+}
+
+#mg{
+    position: relative;
+    height: 30vh;
+    border-left: 1em black solid;
+    border-right: 1em black solid;
+    border-bottom: 0.5em black solid;
+    border-top: 0.5em black solid;
+}
+
+#mg1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/cbg1.png);
+    background-position: center;
+}
+
+#mg2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/cbg2.png);
+    background-position: center;
+    animation: mg2 0.5s alternate infinite ease-in;
+}
+
+@keyframes mg2{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#mg3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/mg.png);
+    background-position: center;
+    animation: mg3 1.5s alternate infinite ease-in-out;
+}
+
+@keyframes mg3{
+    0%   {transform: scale(1.2);}
+    100% {transform: scale(1.5);}
+}
+
+section div:nth-child(2) article{
+    border-top: 0.5em black solid;
+    border-right: 1em black solid;
+    border-bottom: 0.5em black solid;
+    border-left: 1em black solid;
+    display: flex;
+    flex-direction: column;
+    background: url(img/bg.png);
+    background-size: contain;
+    height: 100%;
+}
+
+section div:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+}
+
+section div:nth-child(2) p{
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 0;
+    background-color: white;
+    color: black;
+}
+
+section h3{
+    padding: 1em;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+footer{
+    font-size: 1.5em;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
